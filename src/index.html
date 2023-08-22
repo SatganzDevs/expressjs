@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Rest API - SatganzDevs</title>
+  <link rel="icon" href="./src/img/logo/favicon.png" type="image/x-icon">
+
+  <link href="./src/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="./src/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="./src/css/ruang-admin.min.css" rel="stylesheet">
+<script src="https://static.cbox.ws/embed/1.js" async></script>
+</head>
+
+<body id="page-top">
+  <div id="wrapper">
+    <!-- Sidebar -->
+    <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-icon">
+        	<img src="img/logo/favicon.png">
+        </div>
+        <div class="sidebar-brand-text mx-3">SatganzDevs's API</div>
+      </a>
+      <hr class="sidebar-divider my-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">
+          <i class="fa-solid fa-code"></i>
+          <span>Beranda</span></a>
+      </li>
+      <hr class="sidebar-divider">
+      <div class="sidebar-heading">
+        API Features
+      </div>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
+          aria-expanded="true" aria-controls="collapseBootstrap">
+          <i class="fa-solid fa-arrow-down"></i>
+          <span>Downloader API</span>
+        </a>
+        <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Downloader API</h6>
+            <a class="collapse-item" href="api/xnxxdl/?url=https://www.xnxx.com/video-nlyn962/object_trampled_underfoot">XNXX Downloader</a>
+            <a class="collapse-item" href="api/pinterestdl/?url=MASUKIN_URL">Pinterest Downloader</a>
+            <a class="collapse-item" href="api/scdl?url=MASUKIN_URL">SoundCloud Downloader</a>
+            </div>
+        </div>
+      </li>
+             <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseIslamic" aria-expanded="true"
+          aria-controls="collapseIslamic">
+          <i class="fa-solid fa-star-and-crescent"></i>
+          <span>Islamic API</span>
+        </a>
+        <div id="collapseIslamic" class="collapse" aria-labelledby="headingIslamic" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Islamic API</h6>
+            <a class="collapse-item" href="api/reilgi/kisahnabi?">Kisah Nabi</a>
+            <a class="collapse-item" href="api/religi/asmaulhusna?query=1">Asmaul Husna</a>
+             <a class="collapse-item" href="api/religi/doaharian">Doa Harian</a>
+            </div>
+            </div>
+            </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseGithub"
+          aria-expanded="true" aria-controls="collapseGithub">
+          <i class="fa-solid fa-quote-left"></i>
+          <span>Random Text API</span>
+        </a>
+        <div id="collapseGithub" class="collapse" aria-labelledby="headingGithub" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Text API</h6>
+            <a class="collapse-item" href="api/quotes/anime">Anime</a>
+            <a class="collapse-item" href="api/quotes/bacot">Bacot</a>
+            <a class="collapse-item" href="api/quotes/bucin">Bucin</a>
+            <a class="collapse-item" href="api/quotes/dilan">Dilan</a>
+            <a class="collapse-item" href="api/quotes/galau">Galau</a>
+            <a class="collapse-item" href="api/gombal">Gombal</a>
+            <a class="collapse-item" href="api/quotes/islami">Islami</a>
+            <a class="collapse-item" href="api/quotes/katailham">Kata Ilham</a>
+            <a class="collapse-item" href="api/quotes/bacot">Motivasi</a>
+            <a class="collapse-item" href="api/quotes/senja">Senja</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseWpp" aria-expanded="true"
+          aria-controls="collapseWpp">
+        <i class="fa-solid fa-image"></i>
+          <span>Wallpaper API</span>
+        </a>
+        <div id="collapseWpp" class="collapse" aria-labelledby="headingWpp" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Wallpaper API</h6>
+                        <a class="collapse-item" href="api/wallpaper/programming">Wallpaper Programming</a>
+            <a class="collapse-item" href="api/wallpaper/cyberspace">Wallpaper CyberSpace</a>
+            <a class="collapse-item" href="api/wallpaper/pegunungan">Wallpaper Pegunungan</a>
+            <a class="collapse-item" href="api/wallpaper/pegunungan">Wallpaper Teknologi</a>
+          </div>
+        </div>
+      </li>
+            <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAnime" aria-expanded="true"
+          aria-controls="collapseAnime">
+        <i class="fa-solid fa-yin-yang"></i>
+          <span>Anime/Manga API</span>
+        </a>
+        <div id="collapseAnime" class="collapse" aria-labelledby="headingAnime" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Anime/Manga API</h6>
+            <a class="collapse-item" href="api/random/waifu">Anime Waifu</a>
+            <a class="collapse-item" href="api/random/loli">Anime Loli</a>
+            <a class="collapse-item" href="api/anime?query=madara">Anime Character</a>
+             <a class="collapse-item" href="api/animesearch?query=mashle">Anime Search</a>
+            <a class="collapse-item" href="api/mangasearch">Manga Search</a>
+          </div>
+        </div>
+      </li>
+            <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFun" aria-expanded="true"
+          aria-controls="collapseFun">
+          <i class="fa-solid fa-ghost"></i>
+          <span>Fun API</span>
+        </a>
+        <div id="collapseFun" class="collapse" aria-labelledby="headingFun" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Fun API</h6>
+            <a class="collapse-item" href="api/random/darkjokes">Dark Jokes</a>
+           <a class="collapse-item" href="api/random/meme">Meme Random</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSticker" aria-expanded="true"
+          aria-controls="collapseAnime">
+          <i class="fa-solid fa-face-laugh-beam"></i>
+          <span>Sticker API</span>
+        </a>
+        <div id="collapseSticker" class="collapse" aria-labelledby="headingAnime" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Sticker</h6>
+            <a class="collapse-item" href="api/stiker/amongus">Among US</a>
+            <a class="collapse-item" href="api/stiker/anime">Anime</a>
+            <a class="collapse-item" href="api/stiker/doge">Doge</a>
+            <a class="collapse-item" href="api/stiker/mukalu">Mukalu</a>
+            <a class="collapse-item" href="api/stiker/paimon">Paimon</a>
+            <a class="collapse-item" href="api/stiker/patrick">Patrick</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseother" aria-expanded="true"
+          aria-controls="collapseother">
+          <i class="fa-solid fa-layer-group"></i>
+          <span>Other</span>
+        </a>
+        <div id="collapseother" class="collapse" aria-labelledby="headingother" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Other Menu</h6>
+            <a class="collapse-item" href="api/cuaca?city=kab bungo&apikey=MASUKAN_APIKEY">Info Cuaca</a>
+            <a class="collapse-item" href="api/kbbi?kata=pohon">KBBI</a>
+            <a class="collapse-item" href="api/taugasih">Fakta Unik</a>
+            <a class="collapse-item" href="api/lirik?query=505">Lirik</a>
+            <a class="collapse-item" href="api/simi?message=hai">SimSimi</a>
+          </div>
+        </div>
+      </li>
+      <hr class="sidebar-divider">
+      <div class="sidebar-heading">
+<div class="version"><b>Contact me</b></div>
+      </div>
+      <li class="nav-item">
+          
+            <a class="nav-link collapsed" href="/about">
+            <i class="fa-solid fa-info"></i>
+                    <span>About Me</span>
+            </a>
+      </li>
+      <li class="nav-item">
+          
+            <a class="nav-link collapsed" href="https://api.whatsapp.com/send/?phone=6281316701742&text=assalamualaikum&type=phone_number&app_absent=0">
+            <i class="fa-brands fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+            </a>
+      </li>
+      <li class="nav-item">
+            <a class="nav-link collapsed" href="https://github.com/SatganzDevs">
+            <i class="fa-brands fa-github"></i>
+                    <span>Github</span>
+            </a>
+      </li>
+      <li class="nav-item">
+            <a class="nav-link collapsed" href="https://instagram.com/kurniawan_satriaaaa">
+            <i class="fa-brands fa-instagram"></i>
+                    <span>Instagram</span>
+            </a>
+      </li>
+      <hr class="sidebar-divider">
+      <div class="version"><b>Made With ♥️ By SatganzDevs</b></div>
+    </ul>
+    <!-- Sidebar -->
+    <div id="content-wrapper" class="d-flex flex-column">
+      <div id="content">
+        <!-- TopBar -->
+        <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top">
+          <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                aria-labelledby="searchDropdown">
+                <form class="navbar-search">
+                  <div class="input-group">
+                    <input type="text" class="form-control bg-light border-1 small" placeholder="What do you want to look for?"
+                      aria-label="Search" aria-describedby="basic-addon2" style="border-color: #3f51b5;">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+              </a>
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="messagesDropdown">
+              </div>
+            </li>
+<li class="nav-item dropdown no-arrow mx-1 show">
+  <a class="nav-link dropdown-toggle" href="#" id="audioDropdown" role="button" data-toggle="dropdown"
+    aria-haspopup="true" aria-expanded="false">
+    <i class="fa-solid fa-play" id="playPauseIcon"></i>
+  </a>
+  <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+    aria-labelledby="audioDropdown">
+    <h6 class="dropdown-header">
+      Hening Ya? Putar Musik Nih
+    </h6>
+    <a class="dropdown-item align-items-center audio-item " href="#" data-src="audio/ayaja.mp3">
+      A Year Ago - James Arthur
+    </a>
+    <a class="dropdown-item align-items-center audio-item" href="#" data-src="audio/dj.mp3">
+      DJ ITS MY LIFE
+    </a>
+    <a class="dropdown-item align-items-center audio-item" href="#" data-src="audio/dj2.mp3">
+      Dj New Rules x River Flows In You (Slowed Reverb) Viral TikTok Version!!🎧
+    </a>
+    <a class="dropdown-item align-items-center audio-item" href="#" data-src="audio/dj3.mp3">
+      DJ Toca Toca Thailand Style
+    </a>
+    <a class="dropdown-item align-items-center audio-item" href="#" data-src="audio/dj4.mp3">
+      DJ Sakitnya Luar Dalam
+    </a>
+  </div>
+</li>
+            <div class="topbar-divider d-none d-sm-block"></div>
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <img class="img-profile rounded-circle" src="img/boy.png" style="max-width: 60px">
+                <span class="ml-2 d-none d-lg-inline text-white small">Maman Ketoprak</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Profile
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Settings
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Activity Log
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="javascript:void(0);" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Logout
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!-- Topbar -->
+
+        <!-- Container Fluid-->
+        <div class="container-fluid" id="container-wrapper">
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Beranda</h1>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="./">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Beranda</li>
+            </ol>
+          </div>
+
+                      <div class="row mb-3">
+
+                                               
+                             
+                        <div class="col-lg-6">
+              <!-- Dropdown Basics -->
+              <div class="card mb-4">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">CONTACT ME</h6>
+                </div>
+                <div class="card-body">
+                  <p> kalau mau req fitur atau mau nanya apa aja
+                silahkan, asalkan ngotak ya adick adick      
+                                      
+                </p>
+                  <a href="https://api.whatsapp.com/send/?phone=6281316701742&text=assalamualaikum&type=phone_number&app_absent=0"
+                  class="btn btn-outline-success mb-1" target="_blank"><i class="fa-brands fa-whatsapp"></i>&nbsp;WhatsApp</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-5">
+              <div class="card mb-4">
+              	<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+              	<h6 class="m-0 font-weight-bold text-primary">Progamming Skill</h6>
+                  <div class="dropdown no-arrow">
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                      aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Select Periode</div>
+                      <a class="dropdown-item" href="#">Today</a>
+                      <a class="dropdown-item" href="#">Week</a>
+                      <a class="dropdown-item" href="#">This Year</a>
+                    </div>
+                  </div>
+                </div>
+<div class="card-body">
+                    <div class="mb-3">
+                    <div class="small text-gray-500">Mencintaimu
+                      <div class="small float-right"><b>100%</b></div>
+                    </div>
+                    <div class="progress" style="height: 12px;">
+                      <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="small text-gray-500">JavaScript
+                      <div class="small float-right"><b>80%</b></div>
+                    </div>
+                    <div class="progress" style="height: 12px;">
+                      <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="small text-gray-500">HTML
+                      <div class="small float-right"><b>70%</b></div>
+                    </div>
+                    <div class="progress" style="height: 12px;">
+                      <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="small text-gray-500">CSS
+                      <div class="small float-right"><b>20%</b></div>
+                    </div>
+                    <div class="progress" style="height: 12px;">
+                      <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                  </div>
+                  <div class="mb-3">
+                  </div>
+                </div>
+                <div class="card-footer text-center">
+                </div>
+              </div>
+
+            </div>
+
+            
+          <!--Row-->
+
+
+            </div>
+          </div>
+
+        </div>
+        <!---Container Fluid-->
+      </div>
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; 2021 - Developed By
+              <b><a href="https://github.com/SatganzDevs" target="_blank">SatganzDevs</a></b>
+            </span>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer -->
+    </div>
+  </div>
+
+  <!-- Scroll to top -->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+<audio id="audioPlayer" style="display: none;"></audio>
+<script>
+  const audioItems = document.querySelectorAll('.audio-item');
+  const audioPlayer = document.getElementById('audioPlayer');
+  const marquee = document.getElementById('marquee');
+  const playPauseIcon = document.getElementById('playPauseIcon');
+
+  let isPlaying = false;
+
+  audioItems.forEach(item => {
+    item.addEventListener('click', function(event) {
+      event.preventDefault();
+      const audioSrc = this.getAttribute('data-src');
+      const audioTitle = this.textContent.trim();
+      audioPlayer.src = audioSrc;
+      audioPlayer.play();
+      marquee.textContent = audioTitle;
+      marquee.setAttribute('title', audioTitle);
+      isPlaying = true;
+      updatePlayPauseIcon();
+    });
+  });
+
+  playPauseIcon.addEventListener('click', function() {
+    if (isPlaying) {
+      audioPlayer.pause();
+    } else {
+      audioPlayer.play();
+    }
+    isPlaying = !isPlaying;
+    updatePlayPauseIcon();
+  });
+
+  audioPlayer.addEventListener('play', function() {
+    isPlaying = true;
+    updatePlayPauseIcon();
+  });
+
+  audioPlayer.addEventListener('pause', function() {
+    isPlaying = false;
+    updatePlayPauseIcon();
+  });
+
+  function updatePlayPauseIcon() {
+    if (isPlaying) {
+      playPauseIcon.classList.remove('fa-play');
+      playPauseIcon.classList.add('fa-pause');
+    } else {
+      playPauseIcon.classList.remove('fa-pause');
+      playPauseIcon.classList.add('fa-play');
+    }
+  }
+</script>
+   <script src="./src/vendor/jquery/jquery.min.js"></script>
+  <script src="./src/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./src/vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="./src/js/ruang-admin.js"></script>
+  <script src="./src/vendor/chart.js/Chart.min.js">
+  </script>
+  <script src="./src/js/demo/chart-pie-demo.js"></script>
+</body>
+
+</html>
